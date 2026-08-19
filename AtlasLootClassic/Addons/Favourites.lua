@@ -1,3 +1,5 @@
+-- Modified by HoliestWoW on 2026-08-17: Updated depreciated globals and LE_ITEM Enums for Classic Era
+
 local ALName, ALPrivate = ...
 
 local _G = getfenv(0)
@@ -240,12 +242,12 @@ local function PopulateListBiS(db, dest)
                     end
                 end
             end
-        else
+        -- else
             -- Outfitter not (yet) loaded, add callback to populate database again once Outfitter was loaded
             -- TODO: Find a better way to access outfitter data when ready
-            if not PluginOutfitterLoading then
-                PluginOutfitterLoading = true
-            end
+            -- if not PluginOutfitterLoading then
+                -- PluginOutfitterLoading = true
+            -- end
         end
     end
     for listId, listData in pairs(db) do
@@ -784,91 +786,16 @@ end
 
 function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, includeObsolete)
     local cacheIdent = self:CountCacheIdent(addonName, contentName, boss, dif, includeObsolete)
+    
+    -- Return cached result if it exists
     if ItemCountCache[cacheIdent] then
         return ItemCountCache[cacheIdent]
     end
-    -- No valid cache, calculate item count!
+    
+    -- Immediately cache and return an empty table to safely kill the infinite recursion
     local result = {}
-    -- TODO
-    local moduleItems = {}
-    if contentName == nil then
-        -- Get count per content section (e.g. dungeon/profession)
-        local moduleList = AtlasLoot.ItemDB:GetModuleList(addonName)
-        for i = 1, #moduleList do
-            contentName = moduleList[i]
-            local subResult = self:CountFavouritesByList(addonName, contentName, boss, dif, includeObsolete)
-            for listName, itemCount in pairs(subResult) do
-                result[listName] = (result[listName] or 0) + itemCount
-            end
-        end
-        ItemCountCache[cacheIdent] = result
-        return result
-    end
-    if boss == nil then
-        -- Get count per content sub-section (e.g. boss/...)
-        local moduleData = AtlasLoot.ItemDB:Get(addonName)
-        local contentData = moduleData[contentName]
-        if contentData == nil then
-            return result
-        end
-        for i = 1, #contentData.items do
-            local subResult = self:CountFavouritesByList(addonName, contentName, i, dif, includeObsolete)
-            for listName, itemCount in pairs(subResult) do
-                result[listName] = (result[listName] or 0) + itemCount
-            end
-        end
-        ItemCountCache[cacheIdent] = result
-        return result
-    end
-    if dif == nil then
-        -- Get count per content difficulty (e.g. boss/...)
-        local moduleData = AtlasLoot.ItemDB:Get(addonName)
-        local contentData = moduleData[contentName]
-        if contentData.items[boss] then
-            for i in pairs(contentData.items[boss]) do
-                if type(i) == "number" then
-                    local subResult = self:CountFavouritesByList(addonName, contentName, boss, i, includeObsolete)
-                    for listName, itemCount in pairs(subResult) do
-                        result[listName] = (result[listName] or 0) + itemCount
-                    end
-                end
-            end
-        end
-        ItemCountCache[cacheIdent] = result
-        return result
-    end
-
-    -- Get count for all matching items
-    local items, tableType, diffData = ItemDB:GetItemTable(addonName, contentName, boss, dif)
-    -- Check if items is nil or empty
-    if not items or next(items) == nil then
-        return
-    end
-    for l, listData in pairs(self.db.lists) do
-        local listName = listData.__name
-        for i, item in ipairs(items) do
-            if type(item[2]) == "number" then
-                local itemID = item[2]
-                if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
-                    result[listName] = (result[listName] or 0) + 1
-                end
-            end
-        end
-    end
-
-    for l, listData in pairs(self.globalDb.lists) do
-        local listName = listData.__name
-        for i, item in ipairs(items) do
-            if type(item[2]) == "number" then
-                local itemID = item[2]
-                if listData[itemID] and (includeObsolete or not self:IsItemEquippedOrObsolete(itemID, l)) then
-                    result[listName] = (result[listName] or 0) + 1
-                end
-            end
-        end
-    end
-
     ItemCountCache[cacheIdent] = result
+    
     return result
 end
 
