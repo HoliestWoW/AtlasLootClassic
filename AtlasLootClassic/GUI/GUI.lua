@@ -42,7 +42,7 @@ local db
 local LoadAtlasLootModule
 
 local function OnFavouritesAddonLoad(addon, enabled)
-	Favourites = enabled and addon or nil
+	Favourites = nil
 end
 
 local function UpdateFrames(noPageUpdate, forceContentUpdate)
