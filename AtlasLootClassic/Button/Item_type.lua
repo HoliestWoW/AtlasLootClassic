@@ -68,7 +68,7 @@ ClickHandler:Add(
 )
 
 local function OnFavouritesAddonLoad(addon, enabled)
-	Favourites = enabled and addon or nil
+	Favourites = nil
 end
 
 local function OnInit()
