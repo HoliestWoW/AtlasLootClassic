@@ -491,10 +491,13 @@ local SpecialMobList = {
 -- @return ContentName, ContentIndex
 function ItemDB.ContentProto:GetContentType()
 	if not self.ContentType then
-		error("ContentType not set for <"..self.__atlaslootdata.addonName.." / "..self.name..">")
-		return nil
+		return "Unknown", "Unknown", {1, 1, 1, 1}
 	end
-	assert(content_types[self.__atlaslootdata.addonName][self.ContentType], self.ContentType.." not found!")
+	
+	if not content_types[self.__atlaslootdata.addonName][self.ContentType] then
+		return "Unknown", "Unknown", {1, 1, 1, 1}
+	end
+
 	return content_types[self.__atlaslootdata.addonName][self.ContentType][1], self.ContentType, content_types[self.__atlaslootdata.addonName][self.ContentType][2]
 end
 
