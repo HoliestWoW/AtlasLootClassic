@@ -1,3 +1,6 @@
+-- Modified by HoliestWoW on 2026-08-19: Updated depreciated globals and LE_ITEM Enums for Classic Era
+-- Modified by HoliestWoW on 2026-09-17: Restored Favourites module assignment and fixed missing tooltip owner arguments in SetFavourite click handler.
+
 local _G = _G
 local ALName, ALPrivate = ...
 local AtlasLoot = _G.AtlasLoot
@@ -68,7 +71,11 @@ ClickHandler:Add(
 )
 
 local function OnFavouritesAddonLoad(addon, enabled)
-	Favourites = nil
+	if enabled then
+		Favourites = addon
+	else
+		Favourites = nil
+	end
 end
 
 local function OnInit()
@@ -172,9 +179,10 @@ function Item.OnMouseAction(button, mouseButton)
 					end
 				end
 			end
+			-- Fix: Properly pass the 'owner' argument to Item.OnEnter to prevent silent failure
 			if Favourites:TooltipHookEnabled() then
 				Item.OnLeave(button)
-				Item.OnEnter(button)
+				Item.OnEnter(button, {button, "ANCHOR_RIGHT", -(button:GetWidth() * 0.5), 5})
 			end
 			AtlasLoot.Button:ExtraItemFrame_Refresh(button)
 		end
