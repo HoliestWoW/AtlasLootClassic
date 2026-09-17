@@ -4,6 +4,13 @@ This mod is distributed under Version 2 of the GPL.  A copy of the GPL is includ
 
 [Changelog history](https://github.com/Hoizame/AtlasLootClassic/blob/master/AtlasLootClassic/Documentation/Release_Notes.md)
 
+## v3.2.0-fix3 (September 17, 2026)
+
+- Fixed infinite recursive script timeouts ("script ran too long") caused by UI layout thrashing and dropdown menu cascades in modern Classic Era clients.
+- Added a debounced `GET_ITEM_INFO_RECEIVED` and `ITEM_DATA_LOAD_RESULT` event listener to safely auto-refresh the UI when bulk item cache data arrives from the server.
+- Excluded the incompatible TBC `AtlasLootClassic_BiS` module from the Classic Era build to prevent dead queries and blank items.
+- Updated deprecated globals and `LE_ITEM` Enums to restore compatibility with the modern Classic Era client.
+
 ## v3.2.0 (Oct. 22, 2023)
 
 - update .toc version
