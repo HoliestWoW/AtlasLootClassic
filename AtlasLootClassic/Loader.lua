@@ -11,7 +11,14 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMe
 local GetNumAddOns = C_AddOns and C_AddOns.GetNumAddOns or _G.GetNumAddOns
 local GetAddOnInfo = C_AddOns and C_AddOns.GetAddOnInfo or _G.GetAddOnInfo
 local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.IsAddOnLoaded
-local GetAddOnEnableState = C_AddOns and C_AddOns.GetAddOnEnableState or _G.GetAddOnEnableState
+local GetAddOnEnableState
+if C_AddOns and C_AddOns.GetAddOnEnableState then
+	GetAddOnEnableState = function(character, addon)
+		return C_AddOns.GetAddOnEnableState(addon, character)
+	end
+else
+	GetAddOnEnableState = _G.GetAddOnEnableState
+end
 local LoadAddOn = C_AddOns and C_AddOns.LoadAddOn or _G.LoadAddOn
 local GetTime = GetTime
 -- ----------------------------------------------------------------------------
