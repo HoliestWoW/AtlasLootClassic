@@ -199,7 +199,10 @@ function Set.ShowToolTipFrame(button)
 		frame.modelFrame.zoomLevel = frame.modelFrame.minZoom
 		frame.modelFrame.zoomLevelNew = frame.modelFrame.zoomLevel
 		frame.modelFrame:SetPortraitZoom(frame.modelFrame.zoomLevel)
-		frame.modelFrame.Reset = _G.Model_Reset
+		frame.modelFrame.Reset = _G.Model_Reset or function(self)
+			if self.ClearModel then self:ClearModel() end
+			self:SetUnit("player")
+		end
 
 		frame.bonusDataFrame = CreateFrame("Frame", name.."-bonus", frame, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
 		frame.bonusDataFrame:SetPoint("TOPLEFT", frame, "BOTTOMLEFT", 0, -2)
@@ -229,7 +232,9 @@ function Set.ShowToolTipFrame(button)
 	frame:SetPoint("BOTTOMLEFT", button, "TOPLEFT", (button:GetWidth() * 0.5), 5)
 
 	frame = Set.tooltipFrame.modelFrame
-	frame:Reset()
+	if frame.Reset then
+		frame:Reset()
+	end
 	frame:Undress()
 	frame:SetRotation(frame.curRotation)
 	frame:SetPortraitZoom(frame.zoomLevelNew)

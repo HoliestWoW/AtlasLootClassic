@@ -12,6 +12,19 @@ local function C_Map_GetAreaInfo(id)
 	return d or "GetAreaInfo"..id
 end
 
+local _, _, _, tocversion = GetBuildInfo()
+local isForever = AtlasLoot.IS_FOREVER or (select(4, GetBuildInfo()) >= 11600)
+
+local function EraOnly(dataBlock)
+    if isForever then return nil end
+    return dataBlock
+end
+
+local function ForeverOnly(dataBlock)
+    if not isForever then return nil end
+    return dataBlock
+end
+
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
@@ -23,6 +36,7 @@ local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
+local isForever = AtlasLoot.IS_FOREVER or (select(4, GetBuildInfo()) >= 11600)
 
 local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
 local HEROIC_DIFF = data:AddDifficulty("HEROIC", nil, nil, nil, true)
@@ -72,36 +86,6 @@ data["TierSets"] = {
 	ContentType = SET_CONTENT,
 	TableType = SET_ITTYPE,
 	items = {
-		{ -- T1
-			name = format(AL["Tier %s Sets"], "1"),
-			CoinTexture = "CLASSIC",
-			[NORMAL_DIFF] = {
-				{ 1, 203 }, -- Warlock
-				{ 3, 202 }, -- Priest
-				{ 16, 201 }, -- Mage
-				{ 5, 204 }, -- Rogue
-				{ 20, 205 }, -- Druid
-				{ 7, 206 }, -- Hunter
-				{ 9, 209 }, -- Warrior
-				{ 22, 207 }, -- Shaman
-				{ 24, 208 }, -- Paladin
-			},
-		},
-		{ -- T2
-			name = format(AL["Tier %s Sets"], "2"),
-			CoinTexture = "CLASSIC",
-			[NORMAL_DIFF] = {
-				{ 1, 212 }, -- Warlock
-				{ 3, 211 }, -- Priest
-				{ 16, 210 }, -- Mage
-				{ 5, 213 }, -- Rogue
-				{ 20, 214 }, -- Druid
-				{ 7, 215 }, -- Hunter
-				{ 9, 218 }, -- Warrior
-				{ 22, 216 }, -- Shaman
-				{ 24, 217 }, -- Paladin
-			},
-		},
 		{ -- T2.5
 			name = format(AL["Tier %s Sets"], "2.5"),
 			CoinTexture = "CLASSIC",
@@ -498,6 +482,125 @@ data["TierSets"] = {
 		}),
 	},
 }
+
+if not isForever then
+    local T2_TABLE = {
+        name = format(AL["Tier %s Sets"], "2"),
+        CoinTexture = "CLASSIC",
+        [NORMAL_DIFF] = {
+            { 1, 212 }, { 3, 211 }, { 16, 210 }, { 5, 213 },
+            { 20, 214 }, { 7, 215 }, { 9, 218 }, { 22, 216 }, { 24, 217 },
+        },
+    }
+    local T1_TABLE = {
+        name = format(AL["Tier %s Sets"], "1"),
+        CoinTexture = "CLASSIC",
+        [NORMAL_DIFF] = {
+            { 1, 203 }, { 3, 202 }, { 16, 201 }, { 5, 204 },
+            { 20, 205 }, { 7, 206 }, { 9, 209 }, { 22, 207 }, { 24, 208 },
+        },
+    }
+
+    table.insert(data["TierSets"].items, 1, T2_TABLE)
+    table.insert(data["TierSets"].items, 1, T1_TABLE)
+end
+
+if isForever then
+	-- Page 1: Druid (4 Specs), Hunter, Mage
+	local FOREVER_CRAFTED_SETS_1 = {
+		name = "Forever Crafted Sets I",
+		CoinTexture = "CLASSIC",
+		TableType = NORMAL_ITTYPE,
+		[NORMAL_DIFF] = {
+			-- Left Column: Druid (Feral Tank, Resto, Balance)
+			{ 1, "INV_Box_01", nil, "|cffff7d0aGrovekeeper - Feral Tank|r", nil },
+			{ 2, 273886 }, -- Grovekeeper Shoulderpads
+			{ 3, 273885 }, -- Grovekeeper Grips
+			{ 4, 273884 }, -- Grovekeeper Trousers
+			{ 5, 273887 }, -- Grovekeeper Stompers
+
+			{ 6, "INV_Box_01", nil, "|cffff7d0aGrovekeeper - Restoration|r", nil },
+			{ 7, 273890 }, -- Grovekeeper Mantle
+			{ 8, 273889 }, -- Grovekeeper Mitts
+			{ 9, 273888 }, -- Grovekeeper Kilt
+			{ 10, 273891 }, -- Grovekeeper Sandals
+
+			{ 11, "INV_Box_01", nil, "|cffff7d0aGrovekeeper - Balance|r", nil },
+			{ 12, 273894 }, -- Grovekeeper Pauldrons
+			{ 13, 273893 }, -- Grovekeeper Handguards
+			{ 14, 273892 }, -- Grovekeeper Legguards
+			{ 15, 273895 }, -- Grovekeeper Boots
+
+			-- Right Column: Druid (Feral DPS), Hunter, Mage
+			{ 16, "INV_Box_01", nil, "|cffff7d0aGrovekeeper - Feral DPS|r", nil },
+			{ 17, 273898 }, -- Grovekeeper Spaulders
+			{ 18, 273897 }, -- Grovekeeper Gauntlets
+			{ 19, 273896 }, -- Grovekeeper Leggings
+			{ 20, 273899 }, -- Grovekeeper Treads
+
+			{ 21, "INV_Box_01", nil, "|cffabd473Wildstalker (Hunter)|r", nil },
+			{ 22, 273902 }, -- Wildstalker's Spaulders
+			{ 23, 273901 }, -- Wildstalker's Gauntlets
+			{ 24, 273900 }, -- Wildstalker's Legguards
+			{ 25, 273903 }, -- Wildstalker's Greaves
+
+			{ 26, "INV_Box_01", nil, "|cff69ccf0Manaflare (Mage)|r", nil },
+			{ 27, 273906 }, -- Manaflare Mantle
+			{ 28, 273905 }, -- Manaflare Gloves
+			{ 29, 273904 }, -- Manaflare Pants
+			{ 30, 273907 }, -- Manaflare Boots
+		},
+	}
+
+	-- Page 2: Paladin (3 Specs), Priest (2 Specs), Rogue
+	local FOREVER_CRAFTED_SETS_2 = {
+		name = "Forever Crafted Sets II",
+		CoinTexture = "CLASSIC",
+		TableType = NORMAL_ITTYPE,
+		[NORMAL_DIFF] = {
+			-- Left Column: Paladin (Holy, Protection, Retribution)
+			{ 1, "INV_Box_01", nil, "|cfff58cbaJustice - Holy|r", nil },
+			{ 2, 273910 }, -- Justice Spaulders
+			{ 3, 273909 }, -- Justice Gauntlets
+			{ 4, 273908 }, -- Justice Leggings
+			{ 5, 273911 }, -- Justice Greaves
+
+			{ 6, "INV_Box_01", nil, "|cfff58cbaJustice - Protection|r", nil },
+			{ 7, 273914 }, -- Justice Epaulets
+			{ 8, 273913 }, -- Justice Gloves
+			{ 9, 273912 }, -- Justice Legplates
+			{ 10, 273915 }, -- Justice Treads
+
+			{ 11, "INV_Box_01", nil, "|cfff58cbaJustice - Retribution|r", nil },
+			{ 12, 273918 }, -- Justice Pauldrons
+			{ 13, 273917 }, -- Justice Handguards
+			{ 14, 273916 }, -- Justice Legguards
+			{ 15, 273919 }, -- Justice Sabatons
+
+			-- Right Column: Priest (Holy/Disc, Shadow), Rogue
+			{ 16, "INV_Box_01", nil, "|cffffffffConviction - Holy/Disc|r", nil },
+			{ 17, 273922 }, -- Mantle of Conviction
+			{ 18, 273921 }, -- Gloves of Conviction
+			{ 19, 273920 }, -- Pants of Conviction
+			{ 20, 273923 }, -- Treads of Conviction
+
+			{ 21, "INV_Box_01", nil, "|cffffffffConviction - Shadow|r", nil },
+			{ 22, 273926 }, -- Pauldrons of Conviction
+			{ 23, 273925 }, -- Handguards of Conviction
+			{ 24, 273924 }, -- Leggings of Conviction
+			{ 25, 273927 }, -- Boots of Conviction
+
+			{ 26, "INV_Box_01", nil, "|cfffff569Grimstitch (Rogue)|r", nil },
+			{ 27, 273930 }, -- Grimstitch Spaulders
+			{ 28, 273929 }, -- Grimstitch Gloves
+			{ 29, 273928 }, -- Grimstitch Pants
+			{ 30, 273931 }, -- Grimstitch Boots
+		},
+	}
+
+	table.insert(data["TierSets"].items, 1, FOREVER_CRAFTED_SETS_2)
+	table.insert(data["TierSets"].items, 1, FOREVER_CRAFTED_SETS_1)
+end
 
 data["DungeonSets"] = {
 	name = AL["Dungeon Sets"],

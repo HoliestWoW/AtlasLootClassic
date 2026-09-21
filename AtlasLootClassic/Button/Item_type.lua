@@ -399,6 +399,17 @@ function Item.GetStringContent(str)
 	end
 end
 
+local function ModelReset(self)
+    if self.SetCreature then self:SetCreature(0) end
+    if self.ClearModel then self:ClearModel() end
+    if self.Undress then self:Undress() end
+    if _G.Model_Reset then
+        _G.Model_Reset(self)
+    else
+        self:SetUnit("player")
+    end
+end
+
 --################################
 -- Item dess up
 --################################
@@ -435,7 +446,10 @@ function Item.ShowQuickDressUp(itemLink, ttFrame)
 		frame.modelFrame.zoomLevel = frame.modelFrame.minZoom
 		frame.modelFrame.zoomLevelNew = frame.modelFrame.zoomLevel
 		frame.modelFrame:SetPortraitZoom(frame.modelFrame.zoomLevel)
-		frame.modelFrame.Reset = _G.Model_Reset
+		frame.modelFrame.Reset = _G.Model_Reset or function(self)
+			if self.ClearModel then self:ClearModel() end
+			self:SetUnit("player")
+		end
 
 		Item.previewTooltipFrame = frame
 		frame:Hide()
@@ -467,7 +481,9 @@ function Item.ShowQuickDressUp(itemLink, ttFrame)
 	frame:SetPoint(fPoint, ttFrame, oPoint)
 
 	frame = Item.previewTooltipFrame.modelFrame
-	frame:Reset()
+	if frame.Reset then
+		frame:Reset()
+	end
 	local creatureID = Companion.GetCreatureID(itemLink)
 	if creatureID then
 		frame:SetCreature(creatureID)

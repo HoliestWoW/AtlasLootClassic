@@ -82,7 +82,7 @@ ITEM_SET_DATA_RAW.CLASSIC = {
 	[187] = {{16667,16669,16666,16671,16672,16673,16668,16670},3,3,60,0,{{2,29095},{4,30780},{6,27774},{8,18679}}}, -- The Elements
 	[188] = {{16727,16729,16726,16722,16724,16723,16728,16725},4,3,60,0,{{2,29093},{4,30775},{6,27498},{8,18679}}}, -- Lightforge Armor
 	[189] = {{16731,16733,16730,16735,16737,16736,16732,16734},4,3,60,0,{{2,29092},{4,30770},{6,27419},{8,18679}}}, -- Battlegear of Valor
-	[201] = {{16795,16797,16798,16799,16801,16802,16796,16800},1,4,66,128,{{3,9346},{5,26175},{8,23545}}}, -- Arcanist Regalia
+	--[[[201] = {{16795,16797,16798,16799,16801,16802,16796,16800},1,4,66,128,{{3,9346},{5,26175},{8,23545}}}, -- Arcanist Regalia
 	[202] = {{16813,16816,16815,16819,16812,16817,16814,16811},1,4,66,16,{{3,21973},{5,21092},{8,23550}}}, -- Vestments of Prophecy
 	[203] = {{16808,16807,16809,16804,16805,16806,16810,16803},1,4,66,256,{{3,23554},{5,21741},{8,23553}}}, -- Felheart Raiment
 	[204] = {{16821,16823,16820,16825,16826,16827,16822,16824},2,4,66,8,{{3,21874},{5,21975},{8,23582}}}, -- Nightslayer Armor
@@ -99,7 +99,7 @@ ITEM_SET_DATA_RAW.CLASSIC = {
 	[215] = {{16939,16937,16942,16935,16940,16936,16938,16941},3,4,76,4,{{3,23559},{5,21928},{8,23578}}}, -- Dragonstalker Armor
 	[216] = {{16947,16945,16950,16943,16948,16944,16946,16949},3,4,76,64,{{3,21899},{5,23570},{8,23551}}}, -- The Ten Storms
 	[217] = {{16955,16953,16958,16951,16956,16952,16954,16957},4,4,76,2,{{3,23565},{5,24196},{8,23591}}}, -- Judgement Armor
-	[218] = {{16963,16961,16966,16959,16964,16960,16962,16965},4,4,76,1,{{3,23563},{5,21890},{8,23548}}}, -- Battlegear of Wrath
+	[218] = {{16963,16961,16966,16959,16964,16960,16962,16965},4,4,76,1,{{3,23563},{5,21890},{8,23548}}}, -- Battlegear of Wrath--]]
 	[221] = {{7953,7950,7951,7948,7949,7952},2,2,37,8,{{6,7597}}}, -- Garb of Thero-shan
 	[241] = {{17064,17082},0,4,73,0,{{2,18681}}}, -- Shard of the Gods
 	[261] = {{18205,18204,18203,18202},0,4,67,0,{{4,22648}}}, -- Spirit of Eskhandar
@@ -1491,10 +1491,18 @@ end
 
 function ItemSet.GetSetName(setID, addQualityColor)
     if not ITEM_SET_DATA[setID] then return end
-	local setName = GetItemSetInfo(ITEM_SET_DATA[setID][8] or setID)
-	if ITEM_SET_DATA[setID][8] then
-		setName = format(ITEM_SET_DATA[setID][7] or "%s", setName)
-	end
+	
+    local setName
+    if GetItemSetInfo then
+        setName = GetItemSetInfo(ITEM_SET_DATA[setID][8] or setID)
+    else
+        setName = "Camelot Set (" .. tostring(setID) .. ")"
+    end
+
+    if ITEM_SET_DATA[setID][8] then
+        setName = format(ITEM_SET_DATA[setID][7] or "%s", setName)
+    end
+
     if addQualityColor then
         return format("%s%s|r", COLOR_STRINGS[ITEM_SET_DATA[setID][3]], setName or UNKNOWN)
     else
@@ -1570,7 +1578,17 @@ function ItemSet.GetSetBonusString(setID)
 	if not ITEM_SET_DATA[setID] or not ITEM_SET_DATA[setID][6] then return end
 	local ret = ""
 	for i,spellEntry in ipairs(ITEM_SET_DATA[setID][6]) do
-		local spellText = GetSpellDescription(spellEntry[2])
+		local spellText = ""
+		
+		-- Check for the old API, the new API, or fallback
+		if GetSpellDescription then
+			spellText = GetSpellDescription(spellEntry[2])
+		elseif C_Spell and C_Spell.GetSpellDescription then
+			spellText = C_Spell.GetSpellDescription(spellEntry[2])
+		else
+			spellText = "Bonus description unknown"
+		end
+		
 		if not spellText or spellText == "" then
 			ret = false
 		end
