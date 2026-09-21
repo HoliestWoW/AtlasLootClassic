@@ -378,15 +378,19 @@ local function CleanUpShownLists(db, globalDb, activeSubLists, isGlobalList)
     return new
 end
 
-local function OnTooltipSetItem_Hook(self)
+local function OnTooltipSetItem_Hook(self, item)
     if self:IsForbidden() or not Favourites.db.enabled or (not Favourites.db.showIconInTT and not Favourites.db.showListInTT) then return end
-    local _, item = self:GetItem()
-    if not item then return end
-    if not TooltipCache[item] then
-        TooltipCache[item] = tonumber(strmatch(item, "item:(%d+)"))
+    if not item and self.GetItem then
+        local _, tooltipItem = self:GetItem()
+        item = tooltipItem
     end
-
-    item = TooltipCache[item]
+    if not item then return end
+    if type(item) ~= "number" then
+        if not TooltipCache[item] then
+            TooltipCache[item] = tonumber(strmatch(item, "item:(%d+)"))
+        end
+        item = TooltipCache[item]
+    end
     if Favourites:IsFavouriteItemID(item) then
         if Favourites.db.showIconInTT then
             local text = _G[self:GetName().."TextLeft1"]

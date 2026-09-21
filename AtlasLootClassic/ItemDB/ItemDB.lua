@@ -241,6 +241,10 @@ local function loadItemsFromOtherModule(moduleLoader, loadString, contentTable, 
 end
 
 function ItemDB:GetItemTable(addonName, contentName, boss, dif)
+	if addonName == "AtlasLootClassic_DungeonsAndRaids" and contentName == "Deadmines"
+		and ItemDB.Storage[addonName] and ItemDB.Storage[addonName]["TheDeadmines"] then
+		contentName = "TheDeadmines"
+	end
 	assert(addonName and ItemDB.Storage[addonName], addonName.." (addonName) not found!")
 	assert(contentName and ItemDB.Storage[addonName][contentName], contentName.." (contentName) not found!")
 	assert(boss and ItemDB.Storage[addonName][contentName].items[boss], boss.." (boss) not found!")
@@ -522,7 +526,8 @@ function ItemDB.ContentProto:GetName(raw)
 	if self.name then
 		name = self.name..addEnd
 	elseif self.MapID then
-		name = C_Map.GetAreaInfo(self.MapID)..addEnd or "MapID:"..self.MapID
+		local mapName = C_Map and C_Map.GetAreaInfo and C_Map.GetAreaInfo(self.MapID)
+		name = (mapName or ("MapID:"..tostring(self.MapID)))..addEnd
 	elseif self.FactionID then
 		name = AtlasLoot:Faction_GetFactionName(self.FactionID)..addEnd
 	elseif self.AchievementID then
