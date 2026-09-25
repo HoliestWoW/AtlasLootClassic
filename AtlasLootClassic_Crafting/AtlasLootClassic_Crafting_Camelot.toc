@@ -11,5 +11,5 @@
 
 Locales\\Locales.xml
 private.lua
-data.lua
+data-forever.lua
 

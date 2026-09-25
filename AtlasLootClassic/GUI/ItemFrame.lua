@@ -275,8 +275,16 @@ end)
 ItemCacheListener:SetScript("OnUpdate", function(self, elapsed)
     if pendingRefresh then
         debounceTimer = debounceTimer + elapsed
-        -- Wait for 0.4 seconds of silence from the server before redrawing
+        -- Wait for 0.4 seconds of silence from the server
         if debounceTimer > 0.4 then
+            
+            -- If the mouse is anywhere over the AtlasLoot UI, defer the refresh
+            -- so we don't slam the materials window shut in the player's face.
+            if AtlasLoot.GUI.frame and AtlasLoot.GUI.frame:IsMouseOver() then
+                debounceTimer = 0 
+                return
+            end
+
             pendingRefresh = false
             debounceTimer = 0
             if type(ItemFrame.Refresh) == "function" then

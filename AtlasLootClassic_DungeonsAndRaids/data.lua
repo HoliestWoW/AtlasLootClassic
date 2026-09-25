@@ -80,19 +80,19 @@ local KEYS = {	-- Keys
 		{ 14, 18268, },
 		{ 15, 13873, },
 		{ 16, "INV_Box_01", nil, AL["Misc"], nil },
-		{ 17, 19931 },
-		{ 18, 18250 },
-		{ 19, 9240 },
-		{ 20, 17333 },
-		{ 21, 22754 },
-		{ 22, 13523 },
-		{ 23, 18746 },
-		{ 24, 18663 },
-		{ 25, 19974 },
-		{ 26, 7733 },
-		{ 27, 10818 },
-		{ 29, 22057 },
-		{ 30, 21986 },
+		{ 17, 19931 }, -- Gurubashi Mojo Madness
+		{ 18, 18250 }, -- Gordok Shackle Key
+		{ 19, 9240 }, -- Mallet of Zul'Farrak
+		{ 20, 17333 }, -- Aqual Quintessence
+		{ 21, 22754 }, -- Eternal Quintessence
+		{ 22, 13523 }, -- Blood of Innocents
+		{ 23, 18746 }, -- Divination Scryer
+		{ 24, 18663 }, -- J'eevee's Jar
+		{ 25, 19974 }, -- Mudskunk Lure
+		{ 26, 7733 }, -- Staff of Prehistoria
+		{ 27, 10818 }, -- Yeh'kinya's Scroll
+		{ 29, 22057 }, -- Brazier of Invocation
+		{ 30, 21986 }, -- Banner of Provocation
 	},
 }
 
@@ -330,7 +330,7 @@ data["Ragefire"] = {
 if isForever then
 	data["HallofThanes"] = {
 		MapID = 16919, -- Replace with actual Map ID
-		InstanceID = 0, -- Replace with actual Instance ID
+		InstanceID = 3065, -- Auto-synced from DungeonEncounter.csv
 		AtlasModule = ATLAS_MODULE_NAME,
 		AtlasMapID = "HallofThanes",
 		AtlasMapFile = "HallofThanes",
@@ -379,7 +379,7 @@ if isForever then
 
 	data["RuinsofLordaeron"] = {
 		MapID = 16611,
-		InstanceID = 0,
+		InstanceID = 2999, -- Auto-synced from DungeonEncounter.csv
 		AtlasModule = ATLAS_MODULE_NAME,
 		AtlasMapID = "RuinsofLordaeron",
 		AtlasMapFile = "RuinsofLordaeron",
@@ -428,6 +428,20 @@ if isForever then
 					{ 1, 271209 }, -- Bonerust Leggings
 					{ 2, 271210 }, -- Tuskwrap Belt
 					{ 3, 271217 }, -- Corpse Chopper
+				},
+			},
+			{
+				name = AL["Lordaeron Captain"],
+				specialType = "rare",
+				[NORMAL_DIFF] = {
+				},
+			},
+			{
+				name = AL["Viktor the Vile"],
+				[NORMAL_DIFF] = {
+					{ 1, 271211 }, -- Vilewalkers
+					{ 2, 271212 }, -- Bloodied Chestwraps
+					{ 3, 271218 }, -- Vileblood Scimitar
 				},
 			},
 		},
@@ -929,7 +943,7 @@ data["ShadowfangKeep"] = {
 if isForever then
 	data["ExcavationSite"] = {
 		MapID = 16732,
-		InstanceID = 0,
+		InstanceID = 2998, -- Auto-synced from DungeonEncounter.csv
 		AtlasModule = ATLAS_MODULE_NAME,
 		AtlasMapID = "ExcavationSite",
 		AtlasMapFile = "ExcavationSite",
@@ -1062,6 +1076,11 @@ data["BlackfathomDeeps"] = {
 				{ 3,  6909 }, -- Strike of the Hydra
 			},
 		},
+		isForever and { -- Forever Encounter #2913
+			name = AL["Lorgus Jett"],
+			[NORMAL_DIFF] = {
+			},
+		} or nil,
 		{ -- BFDTrash
 			name = AL["Trash"],
 			ExtraList = true,
@@ -1136,6 +1155,16 @@ data["TheStockade"] = {
 				{ 1,  273827 }, -- Debt Collector
 			},
 		},
+		isForever and { -- Forever Encounter #2758
+			name = AL["Hamhock"],
+			[NORMAL_DIFF] = {
+			},
+		} or nil,
+		isForever and { -- Forever Encounter #2759
+			name = AL["Dextren Ward"],
+			[NORMAL_DIFF] = {
+			},
+		} or nil,
 		{ -- SWStTrash
 			name = AL["Trash"],
 			ExtraList = true,
@@ -1149,7 +1178,7 @@ data["TheStockade"] = {
 if isForever then
 	data["CityofDalaran"] = {
 		MapID = 16560,
-		InstanceID = 0,
+		InstanceID = 2959, -- Auto-synced from DungeonEncounter.csv
 		AtlasModule = ATLAS_MODULE_NAME,
 		AtlasMapID = "CityofDalaran",
 		AtlasMapFile = "CityofDalaran",
@@ -1452,6 +1481,11 @@ data["RazorfenKraul"] = {
 				{ 3,  6688 }, -- Whisperwind Headdress
 			},
 		},
+		isForever and { -- Forever Encounter #2773
+			name = AL["Roogug"],
+			[NORMAL_DIFF] = {
+			},
+		} or nil,
 		{ -- RFKTrash
 			name = AL["Trash"],
 			ExtraList = true,
@@ -5122,6 +5156,11 @@ data["Stratholme"] = {
 				{ 24, 16732 }, -- Legplates of Valor
 			},
 		},
+		isForever and { -- Forever Encounter #2797
+			name = AL["Ezra Grimm"],
+			[NORMAL_DIFF] = {
+			},
+		} or nil,
 		{ -- STRATTrash
 			name = AL["Trash"],
 			ExtraList = true,
@@ -7301,3 +7340,28 @@ data["Naxxramas"] = {
 		T3_SET,
 	},
 }
+
+if isForever then
+	data["ForeverInstance_3002"] = {
+		name = "Instance 3002 (WoW Forever)",
+		MapID = 3002,
+		InstanceID = 3002,
+		AtlasModule = ATLAS_MODULE_NAME,
+		ContentType = RAID40_CONTENT,
+		LoadDifficulty = RAID40_DIFF,
+		items = {
+			{
+				name = AL["Deathulus"],
+				AtlasMapBossID = 1,
+				[NORMAL_DIFF] = {
+				},
+			},
+			{
+				name = AL["Crushfist Bloodbreaker"],
+				AtlasMapBossID = 2,
+				[NORMAL_DIFF] = {
+				},
+			},
+		},
+	}
+end
