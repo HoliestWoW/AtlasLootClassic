@@ -223,8 +223,11 @@ function Item.OnEnter(button, owner)
 	if button.ItemString then
 		tooltip:SetHyperlink(button.ItemString)
 	else
-		tooltip:SetItemByID(button.ItemID)
-		--tooltip:SetHyperlink("item:"..button.ItemID)
+		if C_Item and C_Item.RequestLoadItemDataByID then
+			C_Item.RequestLoadItemDataByID(button.ItemID)
+		end
+		tooltip:SetHyperlink("item:"..button.ItemID)
+		
 		-- small fix for auctionatorTT as it not hooks SetItemByID
 		if _G.Atr_ShowTipWithPricing then
 			local itemName, itemLink = GetItemInfo(button.ItemID)
@@ -569,6 +572,14 @@ function Query:Add(button)
 		button_list[button.ItemID] = { button }
 	else
 		button_list[button.ItemID][#button_list[button.ItemID]+1] = button
+	end
+
+	-- Actively send query to server for custom/uncached items
+	if C_Item and C_Item.RequestLoadItemDataByID then
+		C_Item.RequestLoadItemDataByID(button.ItemID)
+	end
+	if AtlasLootScanTooltip then
+		AtlasLootScanTooltip:SetHyperlink("item:"..button.ItemID)
 	end
 end
 

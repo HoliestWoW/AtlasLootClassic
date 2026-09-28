@@ -56,7 +56,8 @@ function Set.OnSet(button, second)
 		button.secButton.ExtraFrameData = ItemSet.GetSetDataForExtraFrame(button.secButton.SetID)
 		button.secButton.SetIcon = ItemSet.GetSetIcon(button.secButton.SetID, true)
 		button.secButton.SetDescription = ItemSet.GetSetDescriptionString(button.secButton.SetID)
-		button.secButton.SetBonusData = ItemSet.GetSetBonusString(button.secButton.SetID)
+		-- Lazy-loaded in ShowToolTipFrame to prevent "script ran too long" on load
+		-- button.secButton.SetBonusData = ItemSet.GetSetBonusString(button.secButton.SetID)
 
 		Set.Refresh(button.secButton)
 	else
@@ -67,7 +68,8 @@ function Set.OnSet(button, second)
 		button.ExtraFrameData = ItemSet.GetSetDataForExtraFrame(button.SetID)
 		button.SetIcon = ItemSet.GetSetIcon(button.SetID, true)
 		button.SetDescription = ItemSet.GetSetDescriptionString(button.SetID)
-		button.SetBonusData = ItemSet.GetSetBonusString(button.SetID)
+		-- Lazy-loaded in ShowToolTipFrame to prevent "script ran too long" on load
+		-- button.SetBonusData = ItemSet.GetSetBonusString(button.SetID)
 
 		Set.Refresh(button)
 	end

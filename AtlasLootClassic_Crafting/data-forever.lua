@@ -522,24 +522,22 @@ data["Blacksmithing"] = {
 				{ 30, 12260 }, -- Rough Copper Vest / 10
 			},
 			[PLATE_DIFF] = {
-				{ 1, 28461 }, -- Spell #28461
-				{ 2, 16667 }, -- Spell #16667
-				{ 3, 28242 }, -- Icebane Breastplate / 80
-				{ 4, 27587 }, -- Thick Obsidian Breastplate / 72
-				{ 5, 24139 }, -- Darksoul Breastplate / 65
-				{ 6, 24914 }, -- Darkrune Breastplate / 63
-				{ 7, 16745 }, -- Enchanted Thorium Breastplate / 63
-				{ 8, 1252344 }, -- Enriched Thorium Breastplate / 62
-				{ 9, 16731 }, -- Runic Breastplate / 62
-				{ 10, 1252350 }, -- Breastplate of Salvation / 61
-				{ 11, 1252343 }, -- Blessed Plate Chest / 61
-				{ 12, 16663 }, -- Imperial Plate Chest / 60
-				{ 13, 15296 }, -- Dark Iron Plate / 59
-				{ 14, 16642 }, -- Thorium Armor / 50
-				{ 15, 9974 }, -- Truesilver Breastplate / 49
-				{ 16, 9972 }, -- Ornate Mithril Breastplate / 48
-				{ 17, 9959 }, -- Heavy Mithril Breastplate / 46
-				{ 18, 1252289 }, -- Shining Mithril Breastplate / 45
+				{ 1, 28242 }, -- Icebane Breastplate / 80
+				{ 2, 27587 }, -- Thick Obsidian Breastplate / 72
+				{ 3, 24139 }, -- Darksoul Breastplate / 65
+				{ 4, 24914 }, -- Darkrune Breastplate / 63
+				{ 5, 16745 }, -- Enchanted Thorium Breastplate / 63
+				{ 6, 1252344 }, -- Enriched Thorium Breastplate / 62
+				{ 7, 16731 }, -- Runic Breastplate / 62
+				{ 8, 1252350 }, -- Breastplate of Salvation / 61
+				{ 9, 1252343 }, -- Blessed Plate Chest / 61
+				{ 10, 16663 }, -- Imperial Plate Chest / 60
+				{ 11, 15296 }, -- Dark Iron Plate / 59
+				{ 12, 16642 }, -- Thorium Armor / 50
+				{ 13, 9974 }, -- Truesilver Breastplate / 49
+				{ 14, 9972 }, -- Ornate Mithril Breastplate / 48
+				{ 15, 9959 }, -- Heavy Mithril Breastplate / 46
+				{ 16, 1252289 }, -- Shining Mithril Breastplate / 45
 			},
 		},
 		{
@@ -622,27 +620,26 @@ data["Blacksmithing"] = {
 				{ 26, 1301423 }, -- Cloudy Skyforged Gauntlets / 11
 			},
 			[PLATE_DIFF] = {
-				{ 1, 28462 }, -- Spell #28462
-				{ 2, 28243 }, -- Icebane Gauntlets / 80
-				{ 3, 23637 }, -- Dark Iron Gauntlets / 70
-				{ 4, 1306538 }, -- Heavy Thorium Gauntlets / 65
-				{ 5, 24912 }, -- Darkrune Gauntlets / 63
-				{ 6, 16741 }, -- Stronghold Gauntlets / 62
-				{ 7, 23633 }, -- Gloves of the Dawn / 61
-				{ 8, 1297141 }, -- Clutchlord's Grips / 58
-				{ 9, 1297138 }, -- Goregasher Grips / 58
-				{ 10, 16655 }, -- Fiery Plate Gauntlets / 58
-				{ 11, 1252338 }, -- Imperial Plate Gauntlets / 57
-				{ 12, 1252337 }, -- Blessed Plate Gauntlet / 54
-				{ 13, 1252294 }, -- Shining Mithril Gauntlet / 49
-				{ 14, 9954 }, -- Truesilver Gauntlets / 45
-				{ 15, 9950 }, -- Ornate Mithril Gloves / 44
-				{ 16, 9928 }, -- Heavy Mithril Gauntlet / 41
-				{ 17, 1252319 }, -- Justicar's Gauntlet / 40
-				{ 18, 1252315 }, -- Officer's Gauntlet / 40
-				{ 19, 1252318 }, -- Prefect's Gauntlet / 40
-				{ 20, 1252316 }, -- Sentinel's Gauntlet / 40
-				{ 21, 1252317 }, -- Warder's Gauntlet / 40
+				{ 1, 28243 }, -- Icebane Gauntlets / 80
+				{ 2, 23637 }, -- Dark Iron Gauntlets / 70
+				{ 3, 1306538 }, -- Heavy Thorium Gauntlets / 65
+				{ 4, 24912 }, -- Darkrune Gauntlets / 63
+				{ 5, 16741 }, -- Stronghold Gauntlets / 62
+				{ 6, 23633 }, -- Gloves of the Dawn / 61
+				{ 7, 1297141 }, -- Clutchlord's Grips / 58
+				{ 8, 1297138 }, -- Goregasher Grips / 58
+				{ 9, 16655 }, -- Fiery Plate Gauntlets / 58
+				{ 10, 1252338 }, -- Imperial Plate Gauntlets / 57
+				{ 11, 1252337 }, -- Blessed Plate Gauntlet / 54
+				{ 12, 1252294 }, -- Shining Mithril Gauntlet / 49
+				{ 13, 9954 }, -- Truesilver Gauntlets / 45
+				{ 14, 9950 }, -- Ornate Mithril Gloves / 44
+				{ 15, 9928 }, -- Heavy Mithril Gauntlet / 41
+				{ 16, 1252319 }, -- Justicar's Gauntlet / 40
+				{ 17, 1252315 }, -- Officer's Gauntlet / 40
+				{ 18, 1252318 }, -- Prefect's Gauntlet / 40
+				{ 19, 1252316 }, -- Sentinel's Gauntlet / 40
+				{ 20, 1252317 }, -- Warder's Gauntlet / 40
 			},
 		},
 		{
@@ -712,19 +709,18 @@ data["Blacksmithing"] = {
 				{ 17, 1301424 }, -- Cloudy Skyforged Chain / 10
 			},
 			[PLATE_DIFF] = {
-				{ 1, 28463 }, -- Spell #28463
-				{ 2, 27585 }, -- Heavy Obsidian Belt / 68
-				{ 3, 1252341 }, -- Blessed Plate Belt / 59
-				{ 4, 1297142 }, -- Clutchlord's Support / 58
-				{ 5, 1297139 }, -- Goregasher Support / 58
-				{ 6, 23632 }, -- Girdle of the Dawn / 58
-				{ 7, 1252324 }, -- Justicar's Waistguard / 55
-				{ 8, 1252320 }, -- Officer's Waistguard / 55
-				{ 9, 1252323 }, -- Prefect's Waistguard / 55
-				{ 10, 1252321 }, -- Sentinel's Waistguard / 55
-				{ 11, 1252322 }, -- Warder's Waistguard / 55
-				{ 12, 16647 }, -- Imperial Plate Belt / 53
-				{ 13, 16643 }, -- Thorium Belt / 50
+				{ 1, 27585 }, -- Heavy Obsidian Belt / 68
+				{ 2, 1252341 }, -- Blessed Plate Belt / 59
+				{ 3, 1297142 }, -- Clutchlord's Support / 58
+				{ 4, 1297139 }, -- Goregasher Support / 58
+				{ 5, 23632 }, -- Girdle of the Dawn / 58
+				{ 6, 1252324 }, -- Justicar's Waistguard / 55
+				{ 7, 1252320 }, -- Officer's Waistguard / 55
+				{ 8, 1252323 }, -- Prefect's Waistguard / 55
+				{ 9, 1252321 }, -- Sentinel's Waistguard / 55
+				{ 10, 1252322 }, -- Warder's Waistguard / 55
+				{ 11, 16647 }, -- Imperial Plate Belt / 53
+				{ 12, 16643 }, -- Thorium Belt / 50
 			},
 		},
 		{
@@ -881,23 +877,22 @@ data["Enchanting"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 15596 }, -- Spell #15596
-				{ 2, 463866 }, -- Enchanted Sigil: Flowing Waters / 60
-				{ 3, 1263082 }, -- Arcane Forge / 60
-				{ 4, 20051 }, -- Runed Arcanite Rod / 58
-				{ 5, 471400 }, -- Magnificent Trollshine / 55
-				{ 6, 17181 }, -- Enchanted Leather / 55
-				{ 7, 17180 }, -- Enchanted Thorium Bar / 55
-				{ 8, 463869 }, -- Conductive Shield Coating / 50
-				{ 9, 439156 }, -- Enchanted Sigil: Innovation / 40
-				{ 10, 13702 }, -- Runed Truesilver Rod / 40
-				{ 11, 13628 }, -- Runed Golden Rod / 30
-				{ 12, 1263056 }, -- Arcane Salvager / 28
-				{ 13, 7795 }, -- Runed Silver Rod / 20
-				{ 14, 448624 }, -- Scroll of Spatial Mending / 15
-				{ 15, 1245320 }, -- Mote of Magic / 5
-				{ 16, 7421 }, -- Runed Copper Rod / 5
-				{ 17, 1230643 }, -- Enchanted Lute / 4
+				{ 1, 463866 }, -- Enchanted Sigil: Flowing Waters / 60
+				{ 2, 1263082 }, -- Arcane Forge / 60
+				{ 3, 20051 }, -- Runed Arcanite Rod / 58
+				{ 4, 471400 }, -- Magnificent Trollshine / 55
+				{ 5, 17181 }, -- Enchanted Leather / 55
+				{ 6, 17180 }, -- Enchanted Thorium Bar / 55
+				{ 7, 463869 }, -- Conductive Shield Coating / 50
+				{ 8, 439156 }, -- Enchanted Sigil: Innovation / 40
+				{ 9, 13702 }, -- Runed Truesilver Rod / 40
+				{ 10, 13628 }, -- Runed Golden Rod / 30
+				{ 11, 1263056 }, -- Arcane Salvager / 28
+				{ 12, 7795 }, -- Runed Silver Rod / 20
+				{ 13, 448624 }, -- Scroll of Spatial Mending / 15
+				{ 14, 1245320 }, -- Mote of Magic / 5
+				{ 15, 7421 }, -- Runed Copper Rod / 5
+				{ 16, 1230643 }, -- Enchanted Lute / 4
 			},
 		},
 		{
@@ -1253,26 +1248,26 @@ data["Engineering"] = {
 				{ 5, 26428 }, -- Large Red Rocket Cluster / 275
 				{ 6, 1319164 }, -- Large White Rocket Cluster / 275
 				{ 7, 1319165 }, -- Large Yellow Rocket Cluster / 275
-				{ 8, 26442 }, -- Firework Launcher / 245
-				{ 9, 26423 }, -- Blue Rocket Cluster / 225
-				{ 10, 26424 }, -- Green Rocket Cluster / 225
-				{ 11, 1319160 }, -- Purple Rocket Cluster / 225
-				{ 12, 26425 }, -- Red Rocket Cluster / 225
-				{ 13, 1319161 }, -- White Rocket Cluster / 225
-				{ 14, 1319162 }, -- Yellow Rocket Cluster / 225
-				{ 15, 26420 }, -- Large Blue Rocket / 175
-				{ 16, 26421 }, -- Large Green Rocket / 175
-				{ 17, 1319157 }, -- Large Purple Rocket / 175
-				{ 18, 26422 }, -- Large Red Rocket / 175
-				{ 19, 1319158 }, -- Large White Rocket / 175
-				{ 20, 1319159 }, -- Large Yellow Rocket / 175
-				{ 21, 26416 }, -- Small Blue Rocket / 125
-				{ 22, 26417 }, -- Small Green Rocket / 125
-				{ 23, 1319154 }, -- Small Purple Rocket / 125
-				{ 24, 26418 }, -- Small Red Rocket / 125
-				{ 25, 1319155 }, -- Small White Rocket / 125
-				{ 26, 1319156 }, -- Small Yellow Rocket / 125
-				{ 27, 23507 }, -- Snake Burst Firework / 50
+				{ 8, 23507 }, -- Snake Burst Firework / 50
+				{ 9, 26442 }, -- Firework Launcher / 245
+				{ 10, 26423 }, -- Blue Rocket Cluster / 225
+				{ 11, 26424 }, -- Green Rocket Cluster / 225
+				{ 12, 1319160 }, -- Purple Rocket Cluster / 225
+				{ 13, 26425 }, -- Red Rocket Cluster / 225
+				{ 14, 1319161 }, -- White Rocket Cluster / 225
+				{ 15, 1319162 }, -- Yellow Rocket Cluster / 225
+				{ 16, 26420 }, -- Large Blue Rocket / 175
+				{ 17, 26421 }, -- Large Green Rocket / 175
+				{ 18, 1319157 }, -- Large Purple Rocket / 175
+				{ 19, 26422 }, -- Large Red Rocket / 175
+				{ 20, 1319158 }, -- Large White Rocket / 175
+				{ 21, 1319159 }, -- Large Yellow Rocket / 175
+				{ 22, 26416 }, -- Small Blue Rocket / 125
+				{ 23, 26417 }, -- Small Green Rocket / 125
+				{ 24, 1319154 }, -- Small Purple Rocket / 125
+				{ 25, 26418 }, -- Small Red Rocket / 125
+				{ 26, 1319155 }, -- Small White Rocket / 125
+				{ 27, 1319156 }, -- Small Yellow Rocket / 125
 				{ 28, 23067 }, -- Blue Firework / 20
 				{ 29, 23068 }, -- Green Firework / 20
 				{ 30, 23066 }, -- Red Firework / 20
@@ -1338,45 +1333,45 @@ data["Engineering"] = {
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
 				{ 1, 1266938 }, -- Ultralight Goblin Glider / 320
-				{ 2, 1226209 }, -- Tinkerbox: Magnetic Displacement / 270
-				{ 3, 1226208 }, -- Tinkerbox: Nitro Boosts / 270
-				{ 4, 1226207 }, -- Tinkerbox: Teleport / 270
-				{ 5, 1226206 }, -- Tinkerbox / 260
-				{ 6, 1228088 }, -- Pop-Up Shrub / 255
-				{ 7, 431362 }, -- Soul Vessel / 205
-				{ 8, 1286792 }, -- Centaur Banner Deployment Device / 190
-				{ 9, 1286796 }, -- Hoof-Shaped Foot Pedal / 150
-				{ 10, 424641 }, -- Shredder Autosalvage Unit / 135
-				{ 11, 1266936 }, -- Dimensional Transporter - Mt. Hyjal / 60
-				{ 12, 1266939 }, -- Gnomish Weather Machine NYI / 60
-				{ 13, 1266940 }, -- Stealthman 52 / 60
-				{ 14, 22704 }, -- Field Repair Bot 74A / 60
-				{ 15, 26011 }, -- Tranquil Mechanical Yeti / 60
-				{ 16, 1263083 }, -- Anarchist's Workbench / 60
-				{ 17, 28327 }, -- Steam Tonk Controller / 55
-				{ 18, 19814 }, -- Masterwork Target Dummy / 55
-				{ 19, 1266925 }, -- Loot-A-Rang / 55
-				{ 20, 23080 }, -- Powerful Seaforium Charge / 55
-				{ 21, 23096 }, -- Gnomish Alarm-O-Bot / 53
-				{ 22, 19567 }, -- Salt Shaker / 50
-				{ 23, 23129 }, -- World Enlarger / 50
-				{ 24, 1266924 }, -- Gnomish Army Knife / 50
-				{ 25, 12715 }, -- Recipe: Goblin Rocket Fuel / 42
-				{ 26, 12900 }, -- Mobile Alarm / 41
-				{ 27, 12895 }, -- Plans: Inlaid Mithril Cylinder / 40
-				{ 28, 3972 }, -- Large Seaforium Charge / 40
-				{ 29, 15255 }, -- Mechanical Repair Kit / 40
-				{ 30, 21940 }, -- Snowmaster 9000 / 38
-				{ 101, 3965 }, -- Advanced Target Dummy / 37
-				{ 102, 3963 }, -- Compact Harvest Reaper Kit / 35
-				{ 103, 12590 }, -- Gyromatic Micro-Adjustor / 35
-				{ 104, 1266912 }, -- SAF-T Bell / 35
-				{ 105, 3960 }, -- Portable Bronze Mortar / 33
-				{ 106, 3959 }, -- Discombobulator Ray / 32
-				{ 107, 3957 }, -- Ice Deflector / 31
-				{ 108, 9271 }, -- Aquadynamic Fish Attractor / 30
-				{ 109, 1263034 }, -- Repair Bot / 28
-				{ 110, 6458 }, -- Ornate Spyglass / 27
+				{ 2, 1266936 }, -- Dimensional Transporter - Mt. Hyjal / 60
+				{ 3, 1266939 }, -- Gnomish Weather Machine NYI / 60
+				{ 4, 1266940 }, -- Stealthman 52 / 60
+				{ 5, 22704 }, -- Field Repair Bot 74A / 60
+				{ 6, 26011 }, -- Tranquil Mechanical Yeti / 60
+				{ 7, 1263083 }, -- Anarchist's Workbench / 60
+				{ 8, 28327 }, -- Steam Tonk Controller / 55
+				{ 9, 19814 }, -- Masterwork Target Dummy / 55
+				{ 10, 1266925 }, -- Loot-A-Rang / 55
+				{ 11, 23080 }, -- Powerful Seaforium Charge / 55
+				{ 12, 1226209 }, -- Tinkerbox: Magnetic Displacement / 270
+				{ 13, 1226208 }, -- Tinkerbox: Nitro Boosts / 270
+				{ 14, 1226207 }, -- Tinkerbox: Teleport / 270
+				{ 15, 23096 }, -- Gnomish Alarm-O-Bot / 53
+				{ 16, 1226206 }, -- Tinkerbox / 260
+				{ 17, 1228088 }, -- Pop-Up Shrub / 255
+				{ 18, 19567 }, -- Salt Shaker / 50
+				{ 19, 23129 }, -- World Enlarger / 50
+				{ 20, 1266924 }, -- Gnomish Army Knife / 50
+				{ 21, 12715 }, -- Recipe: Goblin Rocket Fuel / 42
+				{ 22, 431362 }, -- Soul Vessel / 205
+				{ 23, 12900 }, -- Mobile Alarm / 41
+				{ 24, 12895 }, -- Plans: Inlaid Mithril Cylinder / 40
+				{ 25, 3972 }, -- Large Seaforium Charge / 40
+				{ 26, 15255 }, -- Mechanical Repair Kit / 40
+				{ 27, 1286792 }, -- Centaur Banner Deployment Device / 190
+				{ 28, 21940 }, -- Snowmaster 9000 / 38
+				{ 29, 3965 }, -- Advanced Target Dummy / 37
+				{ 30, 3963 }, -- Compact Harvest Reaper Kit / 35
+				{ 101, 12590 }, -- Gyromatic Micro-Adjustor / 35
+				{ 102, 1266912 }, -- SAF-T Bell / 35
+				{ 103, 3960 }, -- Portable Bronze Mortar / 33
+				{ 104, 3959 }, -- Discombobulator Ray / 32
+				{ 105, 3957 }, -- Ice Deflector / 31
+				{ 106, 9271 }, -- Aquadynamic Fish Attractor / 30
+				{ 107, 1286796 }, -- Hoof-Shaped Foot Pedal / 150
+				{ 108, 1263034 }, -- Repair Bot / 28
+				{ 109, 6458 }, -- Ornate Spyglass / 27
+				{ 110, 424641 }, -- Shredder Autosalvage Unit / 135
 				{ 111, 3944 }, -- Flame Deflector / 25
 				{ 112, 3933 }, -- Small Seaforium Charge / 20
 				{ 113, 8334 }, -- Practice Lock / 20
@@ -1493,35 +1488,35 @@ data["Tailoring"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Chest"],
 			[NORMAL_DIFF] = {
-				{ 1, 44950 }, -- Green Winter Clothes / 250
-				{ 2, 44958 }, -- Red Winter Clothes / 250
-				{ 3, 26403 }, -- Festival Dress / 220
-				{ 4, 26407 }, -- Festival Suit / 220
-				{ 5, 28207 }, -- Glacial Vest / 80
-				{ 6, 28480 }, -- Sylvan Vest / 70
-				{ 7, 23666 }, -- Flarecore Robe / 66
-				{ 8, 24091 }, -- Bloodvine Vest / 65
-				{ 9, 1306540 }, -- Robes of Fiery Devastation / 65
-				{ 10, 18457 }, -- Robe of the Archmage / 62
-				{ 11, 18458 }, -- Robe of the Void / 62
-				{ 12, 18456 }, -- Truefaith Vestments / 62
-				{ 13, 22902 }, -- Mooncloth Robe / 61
-				{ 14, 18451 }, -- Felcloth Robe / 61
-				{ 15, 18447 }, -- Mooncloth Vest / 60
-				{ 16, 18446 }, -- Wizardweave Robe / 60
-				{ 17, 1257486 }, -- Earthenweave Vest / 59
-				{ 18, 18436 }, -- Robe of Winter Night / 57
-				{ 19, 18416 }, -- Ghostweave Vest / 55
-				{ 20, 18414 }, -- Brightcloth Robe / 54
-				{ 21, 18408 }, -- Cindercloth Vest / 52
-				{ 22, 18406 }, -- Runecloth Robe / 52
-				{ 23, 18407 }, -- Runecloth Tunic / 52
-				{ 24, 18404 }, -- Frostweave Robe / 51
-				{ 25, 18403 }, -- Frostweave Tunic / 51
-				{ 26, 12077 }, -- Simple Black Dress / 47
-				{ 27, 12070 }, -- Dreamweave Vest / 45
-				{ 28, 12069 }, -- Cindercloth Robe / 45
-				{ 29, 12068 }, -- Stormcloth Vest / 45
+				{ 1, 28207 }, -- Glacial Vest / 80
+				{ 2, 28480 }, -- Sylvan Vest / 70
+				{ 3, 23666 }, -- Flarecore Robe / 66
+				{ 4, 24091 }, -- Bloodvine Vest / 65
+				{ 5, 1306540 }, -- Robes of Fiery Devastation / 65
+				{ 6, 18457 }, -- Robe of the Archmage / 62
+				{ 7, 18458 }, -- Robe of the Void / 62
+				{ 8, 18456 }, -- Truefaith Vestments / 62
+				{ 9, 22902 }, -- Mooncloth Robe / 61
+				{ 10, 18451 }, -- Felcloth Robe / 61
+				{ 11, 18447 }, -- Mooncloth Vest / 60
+				{ 12, 18446 }, -- Wizardweave Robe / 60
+				{ 13, 1257486 }, -- Earthenweave Vest / 59
+				{ 14, 18436 }, -- Robe of Winter Night / 57
+				{ 15, 18416 }, -- Ghostweave Vest / 55
+				{ 16, 18414 }, -- Brightcloth Robe / 54
+				{ 17, 18408 }, -- Cindercloth Vest / 52
+				{ 18, 18406 }, -- Runecloth Robe / 52
+				{ 19, 18407 }, -- Runecloth Tunic / 52
+				{ 20, 18404 }, -- Frostweave Robe / 51
+				{ 21, 18403 }, -- Frostweave Tunic / 51
+				{ 22, 44950 }, -- Green Winter Clothes / 250
+				{ 23, 44958 }, -- Red Winter Clothes / 250
+				{ 24, 12077 }, -- Simple Black Dress / 47
+				{ 25, 12070 }, -- Dreamweave Vest / 45
+				{ 26, 12069 }, -- Cindercloth Robe / 45
+				{ 27, 12068 }, -- Stormcloth Vest / 45
+				{ 28, 26403 }, -- Festival Dress / 220
+				{ 29, 26407 }, -- Festival Suit / 220
 				{ 30, 12056 }, -- Red Mageweave Vest / 43
 				{ 101, 12055 }, -- Shadoweave Robe / 43
 				{ 102, 12050 }, -- Black Mageweave Robe / 42
@@ -1719,10 +1714,10 @@ data["Tailoring"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Body"],
 			[NORMAL_DIFF] = {
-				{ 1, 12085 }, -- Tuxedo Shirt / 205
-				{ 2, 12080 }, -- Pink Mageweave Shirt / 47
-				{ 3, 12075 }, -- Lavender Mageweave Shirt / 46
-				{ 4, 12061 }, -- Orange Mageweave Shirt / 43
+				{ 1, 12080 }, -- Pink Mageweave Shirt / 47
+				{ 2, 12075 }, -- Lavender Mageweave Shirt / 46
+				{ 3, 12061 }, -- Orange Mageweave Shirt / 43
+				{ 4, 12085 }, -- Tuxedo Shirt / 205
 				{ 5, 12064 }, -- Orange Martial Shirt / 40
 				{ 6, 3873 }, -- Black Swashbuckler's Shirt / 40
 				{ 7, 21945 }, -- Green Holiday Shirt / 40
@@ -1810,20 +1805,20 @@ data["Tailoring"] = {
 		{
 			name = ALIL["Bag"],
 			[NORMAL_DIFF] = {
-				{ 1, 1227724 }, -- Crimson Dawnwoven Bag / 300
-				{ 2, 1227723 }, -- Crusader's Knapsack / 260
-				{ 3, 1306545 }, -- Felblood Soul Bag / 65
-				{ 4, 27660 }, -- Big Bag of Enchantment / 65
-				{ 5, 27725 }, -- Satchel of Cenarius / 65
-				{ 6, 18455 }, -- Bottomless Bag / 62
-				{ 7, 1257495 }, -- Bottomless Reagent Bag / 62
-				{ 8, 26087 }, -- Core Felcloth Bag / 60
-				{ 9, 461727 }, -- Leather-Reinforced Runecloth Bag / 60
-				{ 10, 18445 }, -- Mooncloth Bag / 60
-				{ 11, 1257492 }, -- Mooncloth Reagent Bag / 60
-				{ 12, 26086 }, -- Felcloth Bag / 57
-				{ 13, 27724 }, -- Cenarion Herb Bag / 55
-				{ 14, 27659 }, -- Enchanted Runecloth Bag / 55
+				{ 1, 1306545 }, -- Felblood Soul Bag / 65
+				{ 2, 27660 }, -- Big Bag of Enchantment / 65
+				{ 3, 27725 }, -- Satchel of Cenarius / 65
+				{ 4, 18455 }, -- Bottomless Bag / 62
+				{ 5, 1257495 }, -- Bottomless Reagent Bag / 62
+				{ 6, 26087 }, -- Core Felcloth Bag / 60
+				{ 7, 461727 }, -- Leather-Reinforced Runecloth Bag / 60
+				{ 8, 1227724 }, -- Crimson Dawnwoven Bag / 300
+				{ 9, 18445 }, -- Mooncloth Bag / 60
+				{ 10, 1257492 }, -- Mooncloth Reagent Bag / 60
+				{ 11, 26086 }, -- Felcloth Bag / 57
+				{ 12, 27724 }, -- Cenarion Herb Bag / 55
+				{ 13, 27659 }, -- Enchanted Runecloth Bag / 55
+				{ 14, 1227723 }, -- Crusader's Knapsack / 260
 				{ 15, 26085 }, -- Soul Pouch / 52
 				{ 16, 18405 }, -- Runecloth Bag / 52
 				{ 17, 1257465 }, -- Runecloth Reagent Bag / 52
@@ -1972,14 +1967,14 @@ data["Leatherworking"] = {
 		{
 			name = AL["Armor"].." - "..ALIL["Feet"],
 			[LEATHER_DIFF] = {
-				{ 1, 44953 }, -- Winter Boots / 285
-				{ 2, 28473 }, -- Bramblewood Boots / 70
-				{ 3, 22922 }, -- Mongoose Boots / 62
-				{ 4, 23629 }, -- Heavy Timbermaw Boots / 61
-				{ 5, 20853 }, -- Corehound Boots / 59
-				{ 6, 1297128 }, -- Bileblister Boots / 58
-				{ 7, 1297131 }, -- Hivethrasher's Boots / 58
-				{ 8, 23705 }, -- Dawn Treaders / 58
+				{ 1, 28473 }, -- Bramblewood Boots / 70
+				{ 2, 22922 }, -- Mongoose Boots / 62
+				{ 3, 23629 }, -- Heavy Timbermaw Boots / 61
+				{ 4, 20853 }, -- Corehound Boots / 59
+				{ 5, 1297128 }, -- Bileblister Boots / 58
+				{ 6, 1297131 }, -- Hivethrasher's Boots / 58
+				{ 7, 23705 }, -- Dawn Treaders / 58
+				{ 8, 44953 }, -- Winter Boots / 285
 				{ 9, 1255028 }, -- Wicked Leather Boots / 57
 				{ 10, 19063 }, -- Chimeric Boots / 55
 				{ 11, 19066 }, -- Frostsaber Boots / 55
@@ -2391,28 +2386,28 @@ data["Leatherworking"] = {
 		{
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
-				{ 1, 23190 }, -- Heavy Leather Ball / 125
-				{ 2, 1306532 }, -- Wild Leather Armor Kit / 65
-				{ 3, 22727 }, -- Core Armor Kit / 60
-				{ 4, 1263079 }, -- Sewing Machine / 60
-				{ 5, 22815 }, -- Gordok Ogre Suit / 55
-				{ 6, 1254965 }, -- Forceful Rugged Armor Kit / 50
-				{ 7, 1254966 }, -- Mystic Rugged Armor Kit / 50
-				{ 8, 19047 }, -- Cured Rugged Hide / 50
-				{ 9, 19058 }, -- Rugged Armor Kit / 50
-				{ 10, 22331 }, -- Rugged Leather / 50
-				{ 11, 1255073 }, -- Forceful Thick Armor Kit / 40
-				{ 12, 1255074 }, -- Mystic Thick Armor Kit / 40
-				{ 13, 435819 }, -- Faintly Glowing Leather / 40
-				{ 14, 10487 }, -- Thick Armor Kit / 40
-				{ 15, 10482 }, -- Cured Thick Hide / 40
-				{ 16, 20650 }, -- Thick Leather / 40
-				{ 17, 1255095 }, -- Forceful Heavy Armor Kit / 30
-				{ 18, 1255096 }, -- Mystic Heavy Armor Kit / 30
-				{ 19, 3780 }, -- Heavy Armor Kit / 30
-				{ 20, 3818 }, -- Cured Heavy Hide / 30
-				{ 21, 20649 }, -- Heavy Leather / 30
-				{ 22, 1263031 }, -- Tanning Rack / 28
+				{ 1, 1306532 }, -- Wild Leather Armor Kit / 65
+				{ 2, 22727 }, -- Core Armor Kit / 60
+				{ 3, 1263079 }, -- Sewing Machine / 60
+				{ 4, 22815 }, -- Gordok Ogre Suit / 55
+				{ 5, 1254965 }, -- Forceful Rugged Armor Kit / 50
+				{ 6, 1254966 }, -- Mystic Rugged Armor Kit / 50
+				{ 7, 19047 }, -- Cured Rugged Hide / 50
+				{ 8, 19058 }, -- Rugged Armor Kit / 50
+				{ 9, 22331 }, -- Rugged Leather / 50
+				{ 10, 1255073 }, -- Forceful Thick Armor Kit / 40
+				{ 11, 1255074 }, -- Mystic Thick Armor Kit / 40
+				{ 12, 435819 }, -- Faintly Glowing Leather / 40
+				{ 13, 10487 }, -- Thick Armor Kit / 40
+				{ 14, 10482 }, -- Cured Thick Hide / 40
+				{ 15, 20650 }, -- Thick Leather / 40
+				{ 16, 1255095 }, -- Forceful Heavy Armor Kit / 30
+				{ 17, 1255096 }, -- Mystic Heavy Armor Kit / 30
+				{ 18, 3780 }, -- Heavy Armor Kit / 30
+				{ 19, 3818 }, -- Cured Heavy Hide / 30
+				{ 20, 20649 }, -- Heavy Leather / 30
+				{ 21, 1263031 }, -- Tanning Rack / 28
+				{ 22, 23190 }, -- Heavy Leather Ball / 125
 				{ 23, 3817 }, -- Cured Medium Hide / 20
 				{ 24, 20648 }, -- Medium Leather / 20
 				{ 25, 1255123 }, -- Forceful Medium Armor Kit / 15
@@ -2478,47 +2473,60 @@ data["Herbalism"] = {
 				{ 7,  8845 }, -- Ghost Mushroom
 				{ 8,  8839 }, -- Blindweed
 				{ 9,  8838 }, -- Sungrass
-				{ 16, 13468 }, -- Black Lotus
-				{ 18, 19727 }, -- Blood Scythe
-				{ 19, 19726 }, -- Bloodvine
-			}
+				{ 10, 13468 }, -- Black Lotus
+				{ 11, 19727 }, -- Blood Scythe
+				{ 12, 19726 }, -- Bloodvine
+				{ 16, 248822 }, -- Death Lotus
+				{ 17, 249274 }, -- Stranglevine
+				{ 18, 248821 }, -- Demonsage
+				{ 19, 248823 }, -- Marefoil
+				{ 20, 234012 }, -- Hive Thistle
+				{ 21, 279947 }, -- Seed Hybridizer
+			},
 		},
 		{
 			name = AL["Expert"],
 			[NORMAL_DIFF] = {
-				{ 1, 8836 }, -- Arthas' Tears
-				{ 2, 8831, 8153 }, -- Purple Lotus (Wildvine)
-				{ 3, 4625 }, -- Firebloom
-				{ 4, 3819 }, -- Wintersbite
-				{ 5, 3358 }, -- Khadgar's Whisker
-				{ 6, 3821 }, -- Goldthorn
-				{ 7, 3818 }, -- Fadeleaf
-			}
+				{ 1,  8836 }, -- Arthas' Tears
+				{ 2,  8831, 8153 }, -- Purple Lotus (Wildvine)
+				{ 3,  4625 }, -- Firebloom
+				{ 4,  3819 }, -- Wintersbite
+				{ 5,  3358 }, -- Khadgar's Whisker
+				{ 6,  3821 }, -- Goldthorn
+				{ 7,  3818 }, -- Fadeleaf
+				{ 16, 249424 }, -- Rosecap
+				{ 17, 268418 }, -- Scarce Herb Seeds
+				{ 18, 268417 }, -- Unusual Herb Seeds
+			},
 		},
 		{
 			name = AL["Journeyman"],
 			[NORMAL_DIFF] = {
-				{ 1, 3357 }, -- Liferoot
-				{ 2, 3356 }, -- Kingsblood
-				{ 3, 3369 }, -- Grave Moss
-				{ 4, 3355 }, -- Wild Steelbloom
-				{ 5, 2453 }, -- Bruiseweed
-				{ 6, 3820 }, -- Stranglekelp
-			}
+				{ 1,  3357 }, -- Liferoot
+				{ 2,  3356 }, -- Kingsblood
+				{ 3,  3369 }, -- Grave Moss
+				{ 4,  3355 }, -- Wild Steelbloom
+				{ 5,  2453 }, -- Bruiseweed
+				{ 6,  3820 }, -- Stranglekelp
+				{ 16, 249399 }, -- Frilled Lichen
+				{ 17, 268416 }, -- Uncommon Herb Seeds
+				{ 18, 279964 }, -- Greenhouse
+			},
 		},
 		{
 			name = AL["Apprentice"],
 			[NORMAL_DIFF] = {
-				{ 1, 2450, 2452 }, -- Briarthorn (Swiftthistle)
-				{ 2, 785,  2452 }, -- Mageroyal (Swiftthistle)
-				{ 3, 2449 }, -- Earthroot
-				{ 4, 765 }, -- Silverleaf
-				{ 5, 2447 }, -- Peacebloom
-			}
+				{ 1,  2450, 2452 }, -- Briarthorn (Swiftthistle)
+				{ 2,  785,  2452 }, -- Mageroyal (Swiftthistle)
+				{ 3,  2449 }, -- Earthroot
+				{ 4,  765 }, -- Silverleaf
+				{ 5,  2447 }, -- Peacebloom
+				{ 16, 268415 }, -- Commonplace Herb Seeds
+				{ 17, 279962 }, -- Incense Candle
+			},
 		},
-	}
+	},
 }
-
 data["Cooking"] = {
 	name = ALIL["Cooking"],
 	ContentType = PROF_SEC_CONTENT,
@@ -2719,36 +2727,36 @@ data["FirstAid"] = {
 		{
 			name = ALIL["First Aid"],
 			[NORMAL_DIFF] = {
-				{ 1, 10841 }, -- Heavy Mageweave Bandage / 240
-				{ 2, 10840 }, -- Mageweave Bandage / 210
-				{ 3, 7929 }, -- Heavy Silk Bandage / 180
-				{ 4, 7928 }, -- Silk Bandage / 150
-				{ 5, 3278 }, -- Heavy Wool Bandage / 115
-				{ 6, 3277 }, -- Wool Bandage / 80
-				{ 7, 470349 }, -- Dense Runecloth Bandage / 70
-				{ 8, 30021 }, -- Crystal Infused Bandage / 60
-				{ 9, 1263001 }, -- Plague Doctor's Laboratory / 60
-				{ 10, 23787 }, -- Powerful Anti-Venom / 58
-				{ 11, 1259345 }, -- Powerful Poultice / 58
-				{ 12, 18630 }, -- Heavy Runecloth Bandage / 58
-				{ 13, 1259349 }, -- Surgical Tourniquet / 58
-				{ 14, 1244436 }, -- Major Healing Potion / 55
-				{ 15, 18629 }, -- Runecloth Bandage / 52
-				{ 16, 3276 }, -- Heavy Linen Bandage / 50
-				{ 17, 1244435 }, -- Superior Healing Potion / 45
-				{ 18, 1259341 }, -- Potent Anti-Venom / 36
-				{ 19, 1259344 }, -- Superior Poultice / 36
-				{ 20, 1259348 }, -- Leather Tourniquet / 36
-				{ 21, 1244434 }, -- Greater Healing Potion / 31
-				{ 22, 3275 }, -- Linen Bandage / 30
-				{ 23, 1262996 }, -- Toxin Study / 28
-				{ 24, 1259343 }, -- Clever Poultice / 26
-				{ 25, 7935 }, -- Strong Anti-Venom / 26
-				{ 26, 1244433 }, -- Healing Potion / 22
-				{ 27, 1259347 }, -- Woolen Tourniquet / 21
-				{ 28, 1259342 }, -- Simple Poultice / 16
-				{ 29, 7934 }, -- Anti-Venom / 16
-				{ 30, 1244432 }, -- Lesser Healing Potion / 13
+				{ 1, 470349 }, -- Dense Runecloth Bandage / 70
+				{ 2, 30021 }, -- Crystal Infused Bandage / 60
+				{ 3, 1263001 }, -- Plague Doctor's Laboratory / 60
+				{ 4, 23787 }, -- Powerful Anti-Venom / 58
+				{ 5, 1259345 }, -- Powerful Poultice / 58
+				{ 6, 18630 }, -- Heavy Runecloth Bandage / 58
+				{ 7, 1259349 }, -- Surgical Tourniquet / 58
+				{ 8, 1244436 }, -- Major Healing Potion / 55
+				{ 9, 18629 }, -- Runecloth Bandage / 52
+				{ 10, 10841 }, -- Heavy Mageweave Bandage / 240
+				{ 11, 1244435 }, -- Superior Healing Potion / 45
+				{ 12, 10840 }, -- Mageweave Bandage / 210
+				{ 13, 1259341 }, -- Potent Anti-Venom / 36
+				{ 14, 1259344 }, -- Superior Poultice / 36
+				{ 15, 1259348 }, -- Leather Tourniquet / 36
+				{ 16, 7929 }, -- Heavy Silk Bandage / 180
+				{ 17, 1244434 }, -- Greater Healing Potion / 31
+				{ 18, 7928 }, -- Silk Bandage / 150
+				{ 19, 1262996 }, -- Toxin Study / 28
+				{ 20, 1259343 }, -- Clever Poultice / 26
+				{ 21, 7935 }, -- Strong Anti-Venom / 26
+				{ 22, 3278 }, -- Heavy Wool Bandage / 115
+				{ 23, 1244433 }, -- Healing Potion / 22
+				{ 24, 1259347 }, -- Woolen Tourniquet / 21
+				{ 25, 1259342 }, -- Simple Poultice / 16
+				{ 26, 7934 }, -- Anti-Venom / 16
+				{ 27, 3277 }, -- Wool Bandage / 80
+				{ 28, 1244432 }, -- Lesser Healing Potion / 13
+				{ 29, 3276 }, -- Heavy Linen Bandage / 50
+				{ 30, 3275 }, -- Linen Bandage / 30
 				{ 101, 1244431 }, -- Minor Healing Potion / 5
 				{ 102, 1230117 }, -- First Aid Kit / 4
 			},
@@ -2766,56 +2774,62 @@ data["Fishing"] = {
 		{
 			name = ALIL["Fishing"],
 			[NORMAL_DIFF] = {
-				{ 1,  6533 }, --  Aquadynamic Fish Attractor
-				{ 2,  6532 }, --  Bright Baubles
-				{ 3,  7307 }, --  Flesh Eating Worm
-				{ 4,  6811 }, --  Aquadynamic Fish Lens
-				{ 5,  6530 }, --  Nightcrawlers
-				{ 16, 19971 }, -- High Test Eternium Fishing Line
-				{ 29, 16082 }, -- Artisan Fishing - The Way of the Lure
-				{ 30, 16083 }, -- Expert Fishing - The Bass and You
-			}
+				{ 1, 279966 }, -- Fishing Hut
+				{ 2, 279965 }, -- Fishing Rack
+				{ 3, 259846 }, -- Wide-Brimmed Fishing Hat
+				{ 4, 273636 }, -- Chef's Knife
+				{ 5, 19971 }, -- High Test Eternium Fishing Line
+				{ 6, 6533 }, -- Aquadynamic Fish Attractor
+				{ 7, 6532 }, -- Bright Baubles
+				{ 8, 7307 }, -- Flesh Eating Worm
+				{ 9, 6811 }, -- Aquadynamic Fish Lens
+				{ 10, 6530 }, -- Nightcrawlers
+				{ 11, 279967 }, -- Fish Bowl
+				{ 12, 276272 }, -- Master Angler's Fishing Hat
+				{ 13, 258530 }, -- Lucky Lure
+				{ 15, 16083 }, -- Expert Fishing - The Bass and You
+			},
 		},
 		{
 			name = ALIL["Fishing Pole"],
 			[NORMAL_DIFF] = {
 				{ 1, 19970 }, -- Arcanite Fishing Pole
 				{ 2, 19022 }, -- Nat Pagle's Extreme Angler FC-5000
-				{ 3, 6367 }, -- Big Iron Fishing Pole
-				{ 4, 6366 }, -- Darkwood Fishing Pole
+				{ 3, 276203 }, -- Primitive Fishing Pole
+				{ 4, 6367 }, -- Big Iron Fishing Pole
 				{ 5, 6365 }, -- Strong Fishing Pole
 				{ 6, 12225 }, -- Blump Family Fishing Pole
 				{ 7, 6256 }, -- Fishing Pole
-			}
+			},
 		},
 		{
 			name = AL["Fishes"],
 			[NORMAL_DIFF] = {
-				{ 1,  13888 }, -- Darkclaw Lobster
-				{ 2,  13890 }, -- Plated Armorfish
-				{ 3,  13889 }, -- Raw Whitescale Salmon
-				{ 4,  13754 }, -- Raw Glossy Mightfish
-				{ 5,  13759 }, -- Raw Nightfin Snapper
-				{ 6,  13758 }, -- Raw Redgill
-				{ 7,  4603 }, -- Raw Spotted Yellowtail
-				{ 8,  13756 }, -- Raw Summer Bass
-				{ 9,  13760 }, -- Raw Sunscale Salmon
+				{ 1, 13888 }, -- Darkclaw Lobster
+				{ 2, 13890 }, -- Raw Plated Armorfish
+				{ 3, 13889 }, -- Raw Whitescale Salmon
+				{ 4, 13754 }, -- Raw Glossy Mightfish
+				{ 5, 13759 }, -- Raw Nightfin Snapper
+				{ 6, 13758 }, -- Raw Redgill
+				{ 7, 4603 }, -- Raw Spotted Yellowtail
+				{ 8, 13756 }, -- Raw Summer Bass
+				{ 9, 13760 }, -- Raw Sunscale Salmon
 				{ 10, 7974 }, -- Zesty Clam Meat
 				{ 11, 21153 }, -- Raw Greater Sagefish
 				{ 12, 8365 }, -- Raw Mithril Head Trout
 				{ 13, 6362 }, -- Raw Rockscale Cod
 				{ 14, 6308 }, -- Raw Bristle Whisker Catfish
 				{ 15, 21071 }, -- Raw Sagefish
-				{ 16, 6317 }, -- Raw Loch Frenzy
-				{ 17, 6289 }, -- Raw Longjaw Mud Snapper
-				{ 18, 6361 }, -- Raw Rainbow Fin Albacore
-				{ 19, 6291 }, -- Raw Brilliant Smallfish
-				{ 20, 6303 }, -- Raw Slitherskin Mackerel
-			}
+				{ 16, 251524 }, -- Whimsyfin
+				{ 17, 6317 }, -- Raw Loch Frenzy
+				{ 18, 6289 }, -- Raw Longjaw Mud Snapper
+				{ 19, 6361 }, -- Raw Rainbow Fin Albacore
+				{ 20, 6291 }, -- Raw Brilliant Smallfish
+				{ 21, 6303 }, -- Raw Slitherskin Mackerel
+			},
 		},
-	}
+	},
 }
-
 data["RoguePoisons"] = {
 	name = format("|c%s%s|r", RAID_CLASS_COLORS["ROGUE"].colorStr, ALIL["ROGUE"]),
 	ContentType = PROF_CLASS_CONTENT,
